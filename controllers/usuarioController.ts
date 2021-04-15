@@ -20,10 +20,11 @@ export const getUsuario = (req: Request, res: Response) => {
 
 export const postUsuario = (req: Request, res: Response) => {
 
-    const { body } = req;
+    const { nombre } = req.body;
 
     res.json({
-        msg: 'Post users'
+        msg: 'Post users',
+        nombre
     })
 }
 
